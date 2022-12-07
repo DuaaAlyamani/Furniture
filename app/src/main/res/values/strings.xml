@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Furniture</string>
+    <string name="furnature1">Newport Sofa</string>
+    <string name="furnature2">Coffee Table</string>
+    <string name="furnature3">Parker Bed</string>
+    <string name="furnature4">Storage Media</string>
+    <string name="furnature5">Shelf Desk </string>
+
+
+</resources>
