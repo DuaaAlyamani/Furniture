@@ -22,13 +22,13 @@ class FernatureAdaptor(
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = dataset[position]
-        holder.furnitureTitle.text = context.resources.getString(item.name)
+        holder.furnitureName.text = context.resources.getString(item.name)
     }
 
     override fun getItemCount() = dataset.size
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val furnitureTitle: TextView = view.findViewById(R.id.item_furnature_name)
+        val furnitureName: TextView = view.findViewById(R.id.item_furnature_name)
 
     }
 }// End of FernatureAdaptor
