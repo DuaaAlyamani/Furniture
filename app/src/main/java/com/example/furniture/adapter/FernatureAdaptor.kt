@@ -9,27 +9,26 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.furniture.R
 import com.example.furniture.moudel.furniture
 
-class FernatureAdaptor(private val context: Context,
-    private val dataset : List<furniture>)
-    : RecyclerView.Adapter<FernatureAdaptor.ViewHolder>() { // End of FernatureAdaptor
+class FernatureAdaptor(
+    private val context: Context,
+    private val dataset: List<furniture>
+) : RecyclerView.Adapter<FernatureAdaptor.ViewHolder>() {
 
-        //Implement Adapter
-        override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-            val itemLayout = LayoutInflater.from(parent.context).inflate(R.layout.item_furniture, parent, false)
-            return ViewHolder(itemLayout)
-        }
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+        val itemLayout =
+            LayoutInflater.from(parent.context).inflate(R.layout.item_furniture, parent, false)
+        return ViewHolder(itemLayout)
+    }
 
-        override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-            val item = dataset[position]
-            holder.furnitureTitle.text = context.resources.getString(item.name)
-        }
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        val item = dataset[position]
+        holder.furnitureTitle.text = context.resources.getString(item.name)
+    }
 
-        override fun getItemCount() = dataset.size
+    override fun getItemCount() = dataset.size
 
-        // Implement ViewHolder Class
-        class ViewHolder(view : View) : RecyclerView.ViewHolder(view){
-            // views in layout file
-            val furnitureTitle : TextView = view.findViewById(R.id.item_furnature_name)
+    class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+        val furnitureTitle: TextView = view.findViewById(R.id.item_furnature_name)
 
-        }
-}
+    }
+}// End of FernatureAdaptor
