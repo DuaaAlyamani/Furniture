@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
+import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.furniture.R
 import com.example.furniture.moudel.furniture
@@ -26,6 +28,9 @@ class FernatureAdaptor(
         holder.furnitureName.text = context.resources.getString(item.name)
         holder.furniturePrice.text = context.resources.getString(item.price)
         holder.furnitureImage.setImageResource(item.imag)
+        holder.card.setOnClickListener {
+            Toast.makeText(context,context.resources.getString(item.name), Toast.LENGTH_SHORT).show()
+        }
 
 
     }
@@ -36,6 +41,8 @@ class FernatureAdaptor(
         val furnitureName: TextView = view.findViewById(R.id.tv_name)
         val furniturePrice: TextView = view.findViewById(R.id.tv_price)
         val furnitureImage: ImageView = view.findViewById(R.id.photo_image_view)
+        val card: CardView = view.findViewById(R.id.cardView)
+
 
     }
 }// End of FernatureAdaptor

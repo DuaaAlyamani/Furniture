@@ -3,7 +3,7 @@ package com.example.furniture
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
-import com.example.furniture.adapter.FernatureAdaptor
+import com.example.furniture.adapterFe.FernatureAdaptor
 import com.example.furniture.data.DataSource
 
 class MainActivity : AppCompatActivity() {
@@ -21,5 +21,10 @@ class MainActivity : AppCompatActivity() {
         recyclerView.adapter = adapter
 
         recyclerView.setHasFixedSize(true)
+
+
+
+
     }
+
 }

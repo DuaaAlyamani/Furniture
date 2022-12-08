@@ -11,6 +11,9 @@
         android:layout_height="match_parent"
         tools:listitem="@layout/item_furniture"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-        android:id="@+id/recyclerview"/>
+        android:id="@+id/recyclerview"
+
+
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
