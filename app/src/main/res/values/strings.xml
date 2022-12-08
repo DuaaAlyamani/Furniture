@@ -4,7 +4,15 @@
     <string name="furnature2">Coffee Table</string>
     <string name="furnature3">Parker Bed</string>
     <string name="furnature4">Storage Media</string>
-    <string name="furnature5">Shelf Desk </string>
+    <string name="furnature5">Shelf Desk</string>
+
+    <string name="peice1">SAR 10,500.00</string>
+    <string name="peice2">SAR 3,150.00</string>
+    <string name="peice3">SAR 8,675.00</string>
+    <string name="peice4">SAR 7,650.00</string>
+    <string name="peice5">SAR 1,545.00</string>
+
+
 
 
 </resources>

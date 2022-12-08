@@ -1,9 +1,10 @@
-package com.example.furniture.adapter
+package com.example.furniture.adapterFe
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.furniture.R
@@ -23,12 +24,18 @@ class FernatureAdaptor(
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = dataset[position]
         holder.furnitureName.text = context.resources.getString(item.name)
+        holder.furniturePrice.text = context.resources.getString(item.price)
+        holder.furnitureImage.setImageResource(item.imag)
+
+
     }
 
     override fun getItemCount() = dataset.size
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val furnitureName: TextView = view.findViewById(R.id.item_furnature_name)
+        val furnitureName: TextView = view.findViewById(R.id.tv_name)
+        val furniturePrice: TextView = view.findViewById(R.id.tv_price)
+        val furnitureImage: ImageView = view.findViewById(R.id.photo_image_view)
 
     }
 }// End of FernatureAdaptor
