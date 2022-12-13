@@ -59,6 +59,19 @@
             app:layout_constraintTop_toBottomOf="@id/tv_name"
             app:layout_constraintStart_toEndOf="@id/photo_image_view"
             />
+        <TextView
+            android:id="@+id/detali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            tools:text="price"
+            android:textAlignment="center"
+            android:textSize="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_name"
+            app:layout_constraintStart_toEndOf="@id/photo_image_view"
+            />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>
 

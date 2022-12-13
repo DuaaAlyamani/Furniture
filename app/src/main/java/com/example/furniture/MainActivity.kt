@@ -22,8 +22,30 @@ class MainActivity : AppCompatActivity() {
 
         recyclerView.setHasFixedSize(true)
 
+/*
 
 
+    }
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        val inflater: MenuInflater = menuInflater
+        inflater.inflate(R.menu.main_menu, menu)
+        return true
+    }
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.share -> {
+                val sendIntent: Intent = Intent().apply {
+                    action = Intent.ACTION_SEND
+                    putExtra(Intent.EXTRA_TEXT, "Share this URL")
+                    type = "text/plain"
+                }
+                startActivity(sendIntent)
+                true
+            }
+
+            else -> super.onOptionsItemSelected(item)
+        }
+        */
 
     }
 
