@@ -19,7 +19,7 @@
         companion object {
             var name = "name"
             var furnatureName = "Name"
-            var descrption = "desc"
+            var desc = "desc"
             var furnatureDescrption = "Description"
             var image = "image"
             var imagepath = 0
@@ -61,7 +61,7 @@
             super.onCreate(savedInstanceState)
             arguments?.let {
                 furnatureName = it.getString(name).toString()
-                furnatureDescrption = it.getString(descrption).toString()
+                furnatureDescrption = it.getString(desc).toString()
                 imagepath = it.getInt(image)
                 furnaturePrice= it.getString(price).toString()
 
@@ -69,11 +69,11 @@
             }
             var furnature_name: TextView = view.findViewById(R.id.tv_nameDetaile)
             var furnature_Price: TextView = view.findViewById(R.id.tv_priceDetailed)
-            var coffee_Description: TextView = view.findViewById(R.id.detaile)
+            var furnature_Description: TextView = view.findViewById(R.id.detaile)
             var furnatur_image: ImageView = view.findViewById(R.id.imageViewDetailed)
 
             furnature_name.text = furnatureName
-            coffee_Description.text = furnatureDescrption
+            furnature_Description.text = furnatureDescrption
             furnatur_image.setImageResource(imagepath)
             furnature_Price.text = furnaturePrice
             Log.d(TAG, "onViewCreatedD Called")

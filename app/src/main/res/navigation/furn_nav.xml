@@ -23,7 +23,7 @@
                 android:name="image"
                 app:argType="integer" />
             <argument
-                android:name="description"
+                android:name="desc"
                 app:argType="string" />
         </action>
 
