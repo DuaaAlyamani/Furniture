@@ -8,7 +8,7 @@
     <fragment
         android:name="com.example.furniture.Products"
         android:id="@+id/productsFragment"
-        android:label="fragment_products"
+        android:label="Products"
         tools:layout="@layout/fragment_products" >
         <action
             android:id="@+id/action_products_to_productDetail"
@@ -30,7 +30,7 @@
     </fragment>
     <fragment
         android:id="@+id/productDetailFragment"
-        android:label="fragment_product_detail"
+        android:label="Detail"
         tools:layout="@layout/fragment_product_detail"
         android:name="com.example.furniture.ProductDetail"/>
 
