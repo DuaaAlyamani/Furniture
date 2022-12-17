@@ -6,14 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:listitem="@layout/item_furniture"
-        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-        android:id="@+id/recyclerview"
-
-
-        />
-
+  <androidx.fragment.app.FragmentContainerView
+      android:id="@+id/nav_host_fragment"
+      android:name="androidx.navigation.fragment.NavHostFragment"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:defaultNavHost="true"
+      app:navGraph="@navigation/furn_nav"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
