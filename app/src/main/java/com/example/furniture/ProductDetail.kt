@@ -32,19 +32,14 @@
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
             setHasOptionsMenu(true)
-          /*  arguments?.let {
-                nameId = it.getString("name").toString()
-                priceId = it.getString("price").toString()
-                imageId = it.getInt("image")
-                descriptionId = it.getString("description").toString()
-*/
+
             setHasOptionsMenu(true)
 
             Log.d(TAG, "onCreate Called")
             }
 
 
-
+            // hello
 
         override fun onCreateView(
             inflater: LayoutInflater, container: ViewGroup?,
